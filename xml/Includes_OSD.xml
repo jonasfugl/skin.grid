@@ -385,25 +385,14 @@
 							<onclick>PlayerControl(ShowVideoMenu)</onclick>
 							<visible>VideoPlayer.HasMenu</visible>
 							<visible>String.IsEmpty(Skin.String(OSD))</visible>
-						</item>
-						<!--bookmarks-->
+						</item>						
+						<!--subtitle settings-->
 						<item>
-							<label>$LOCALIZE[298]</label>
-							<label2>&#59207;</label2>
+							<label>$LOCALIZE[287]</label>
+							<label2>&#58947;</label2>
 							<onclick>Dialog.Close(VideoOSD,true)</onclick>
 							<onclick>Skin.Reset(OSD)</onclick>
-							<onclick>ActivateWindow(videobookmarks)</onclick>
-							<visible>Player.HasVideo</visible>
-							<visible>!VideoPlayer.Content(LiveTV)</visible>
-							<visible>String.IsEmpty(Skin.String(OSD))</visible>
-						</item>
-						<!--video settngs-->
-						<item>
-							<label>$LOCALIZE[13395]</label>
-							<label2>&#57352;</label2>
-							<onclick>Dialog.Close(VideoOSD,true)</onclick>
-							<onclick>Skin.Reset(OSD)</onclick>
-							<onclick>ActivateWindow(osdvideosettings)</onclick>
+							<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
 							<visible>Player.HasVideo</visible>
 							<visible>String.IsEmpty(Skin.String(OSD))</visible>
 						</item>
@@ -417,14 +406,25 @@
 							<visible>Player.HasVideo</visible>
 							<visible>String.IsEmpty(Skin.String(OSD))</visible>
 						</item>
-						<!--subtitle settings-->
+						<!--video settngs-->
 						<item>
-							<label>$LOCALIZE[287]</label>
-							<label2>&#58947;</label2>
+							<label>$LOCALIZE[13395]</label>
+							<label2>&#57352;</label2>
 							<onclick>Dialog.Close(VideoOSD,true)</onclick>
 							<onclick>Skin.Reset(OSD)</onclick>
-							<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
+							<onclick>ActivateWindow(osdvideosettings)</onclick>
 							<visible>Player.HasVideo</visible>
+							<visible>String.IsEmpty(Skin.String(OSD))</visible>
+						</item>						
+						<!--bookmarks-->
+						<item>
+							<label>$LOCALIZE[298]</label>
+							<label2>&#59207;</label2>
+							<onclick>Dialog.Close(VideoOSD,true)</onclick>
+							<onclick>Skin.Reset(OSD)</onclick>
+							<onclick>ActivateWindow(videobookmarks)</onclick>
+							<visible>Player.HasVideo</visible>
+							<visible>!VideoPlayer.Content(LiveTV)</visible>
 							<visible>String.IsEmpty(Skin.String(OSD))</visible>
 						</item>
 					</content>
