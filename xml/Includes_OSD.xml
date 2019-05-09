@@ -124,7 +124,7 @@
 		<definition>
 			<control type="group">
 				<width>540</width>
-				<height>630</height>
+				<height>450</height>
 				<include>fadeinout</include>
 				<visible>$PARAM[Visible]</visible>
 
@@ -232,12 +232,12 @@
 					<top>90</top>
 					<control type="image">
 						<width>540</width>
-						<height>540</height>
+						<height>360</height>
 						<texture colordiffuse="$VAR[color:Main]">colorize/100.png</texture>
 					</control>
 					<control type="image">
 						<width>540</width>
-						<height>540</height>
+						<height>360</height>
 						<texture colordiffuse="ff000000" flipy="true">grid/osd/90.png</texture>
 						<aspectratio>scale</aspectratio>
 					</control>
@@ -246,7 +246,7 @@
 				<control type="list" id="800">
 					<top>90</top>
 					<width>540</width>
-					<height>630</height>
+					<height>360</height>
 					<onback>Skin.Reset(OSD)</onback>
 					<onleft>Skin.Reset(OSD)</onleft>
 					<onup>700</onup>
@@ -386,80 +386,6 @@
 							<visible>VideoPlayer.HasMenu</visible>
 							<visible>String.IsEmpty(Skin.String(OSD))</visible>
 						</item>
-						<!--subtitles-->
-						<item id="30">
-							<label>$LOCALIZE[287]</label>
-							<label2>&#58947;</label2>
-							<onclick>Skin.SetString(OSD,Subtitles)</onclick>
-							<onclick>Control.SetFocus(800,1)</onclick>
-							<visible>Player.HasVideo</visible>
-							<visible>!VideoPlayer.Content(LiveTV)</visible>
-							<visible allowhiddenfocus="true">String.IsEmpty(Skin.String(OSD,Subtitles))</visible>
-						</item>
-						<!--back-->
-						<item id="31">
-							<label>..</label>
-							<label2>&#57424;</label2>
-							<onclick>Skin.Reset(OSD)</onclick>
-							<visible allowhiddenfocus="true">Skin.String(OSD,Subtitles)</visible>
-						</item>
-						<!--get subtitles-->
-						<item id="32">
-							<label>$LOCALIZE[31557]</label>
-							<label2>&#57475;</label2>
-							<onclick>Skin.Reset(OSD)</onclick>
-							<onclick>Dialog.Close(VideoOSD,true)</onclick>
-							<onclick>ActivateWindow(SubtitleSearch)</onclick>
-							<visible allowhiddenfocus="true">Skin.String(OSD,Subtitles)</visible>
-						</item>
-						<!--subtitle offset-->
-						<item id="33">
-							<label>$LOCALIZE[22006]</label>
-							<label2>&#58968;</label2>
-							<onclick>Skin.Reset(OSD)</onclick>
-							<onclick>SubtitleDelay</onclick>
-							<onclick>Dialog.Close(VideoOSD,true)</onclick>
-							<visible allowhiddenfocus="true">Skin.String(OSD,Subtitles)</visible>
-						</item>
-						<!--toggle subtitles-->
-						<item id="34">
-							<label>$VAR[player:Video.SubtitlesLanguage]</label>
-							<label2>$VAR[player:Video.SubtitlesEnabled]</label2>
-							<onclick>Skin.Reset(OSD)</onclick>
-							<onclick>ShowSubtitles</onclick>
-							<onclick>Dialog.Close(VideoOSD,true)</onclick>
-							<visible allowhiddenfocus="true">Skin.String(OSD,Subtitles)</visible>
-						</item>
-						<!--3D-->
-						<item id="40">
-							<label>3D</label>
-							<label2>&#57373;</label2>
-							<onclick>Skin.SetString(OSD,3D)</onclick>
-							<visible>Player.HasVideo</visible>
-							<visible allowhiddenfocus="true">String.IsEmpty(Skin.String(OSD,3D))</visible>
-							<enable>VideoPlayer.IsStereoscopic</enable>
-						</item>
-						<item id="41">
-							<label>..</label>
-							<label2>&#57424;</label2>
-							<onclick>Skin.Reset(OSD)</onclick>
-							<visible allowhiddenfocus="true">Skin.String(OSD,3D)</visible>
-						</item>
-						<item id="42">
-							<label>$VAR[player:3D.Label]</label>
-							<label2>$VAR[player:3D.Symbol]</label2>
-							<onclick>StereoModeToMono</onclick>
-							<onclick>Skin.Reset(OSD)</onclick>
-							<onclick>Dialog.Close(VideoOSD,true)</onclick>
-							<visible allowhiddenfocus="true">Skin.String(OSD,3D)</visible>
-						</item>
-						<item id="43">
-							<label>$LOCALIZE[31562]</label>
-							<label2>&#57479;</label2>
-							<onclick>Dialog.Close(VideoOSD,true)</onclick>
-							<onclick>StereoMode</onclick>
-							<visible allowhiddenfocus="true">Skin.String(OSD,3D)</visible>
-						</item>
 						<!--bookmarks-->
 						<item>
 							<label>$LOCALIZE[298]</label>
@@ -488,6 +414,16 @@
 							<onclick>Dialog.Close(VideoOSD,true)</onclick>
 							<onclick>Skin.Reset(OSD)</onclick>
 							<onclick>ActivateWindow(osdaudiosettings)</onclick>
+							<visible>Player.HasVideo</visible>
+							<visible>String.IsEmpty(Skin.String(OSD))</visible>
+						</item>
+						<!--subtitle settings-->
+						<item>
+							<label>$LOCALIZE[287]</label>
+							<label2>&#58947;</label2>
+							<onclick>Dialog.Close(VideoOSD,true)</onclick>
+							<onclick>Skin.Reset(OSD)</onclick>
+							<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
 							<visible>Player.HasVideo</visible>
 							<visible>String.IsEmpty(Skin.String(OSD))</visible>
 						</item>
