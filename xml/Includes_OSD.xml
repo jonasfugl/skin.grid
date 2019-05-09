@@ -511,7 +511,7 @@
 		<param name="TextLeft" default="0"/>
 		<param name="TextWidth" default="1664"/>
 		<param name="Top" default="750"/>
-		<param name="Visible">[Player.Paused + !Player.HasGame] | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)</param>
+		<param name="Visible">[[Player.Paused + !Player.HasGame] | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)] + !Window.IsActive(DialogSettings.xml)</param>
 		<definition>
 			<control type="image">
 				<width>screen_Width</width>
