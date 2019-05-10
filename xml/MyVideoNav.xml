@@ -6,9 +6,7 @@
 
 	<controls>
 		<!--background-->
-
 		<control type="group">
-			<visible>!Control.IsVisible(53)</visible>
 			<include content="background_Global">
 				<param name="GridTexture">$VAR[window:Grid]</param>
 			</include>
