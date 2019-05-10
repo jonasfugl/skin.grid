@@ -153,7 +153,7 @@
 						<align>left</align>
 						<width>1188</width>
 						<height>215</height>
-						<label>$INFO[ListItem.Genre,, - ]$INFO[ListItem.Plot]</label>
+						<label>$INFO[ListItem.Plot]</label>
 						<font>Slab-24</font>
 						<textcolor>$VAR[color:Accent]</textcolor>
 						<visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)</visible>
