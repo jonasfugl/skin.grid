@@ -406,7 +406,7 @@
 							<visible>Player.HasVideo</visible>
 							<visible>String.IsEmpty(Skin.String(OSD))</visible>
 						</item>
-						<!--video settngs-->
+						<!--video settings-->
 						<item>
 							<label>$LOCALIZE[13395]</label>
 							<label2>&#57352;</label2>
