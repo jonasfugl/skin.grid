@@ -90,83 +90,24 @@
 					</control>
 				</control>
 
-				<!-- More info -->
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<control type="grouplist">
-						<height>80</height>
-						<orientation>horizontal</orientation>
-						<visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)</visible>
-						<!-- Rating -->
-						<control type="label">
-							<width>25</width>
-							<height>45</height>
-							<label>&#57499;</label>
-							<textcolor>$VAR[color:Text.3]</textcolor>
-							<font>Symbols-24</font>
-							<visible>!String.IsEmpty(Skin.String(ratings.video)) + !String.IsEqual(Skin.String(ratings.video),disabled)</visible>
-						</control>
-						<control type="label">
-							<width>auto</width>
-							<height>45</height>
-							<label>$VAR[info:Rating,&#32;,&#32;&#32;&#32;]</label>
-							<textcolor>$VAR[color:Text.3]</textcolor>
-							<font>Regular-20</font>
-							<visible>!String.IsEmpty(Skin.String(ratings.video)) + !String.IsEqual(Skin.String(ratings.video),disabled)</visible>
-						</control>
-						<!-- Awards -->
-						<control type="label">
-							<width>25</width>
-							<height>45</height>
-							<label>&#57384;</label>
-							<font>Symbols-24</font>
-							<textcolor>$VAR[color:Text.3]</textcolor>
-							<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Awards))</visible>
-						</control>
-						<control type="label">
-							<width>auto</width>
-							<height>45</height>
-							<label>$VAR[info:Extended,&#32;,&#32;&#32;&#32;]</label>
-							<font>Regular-20</font>
-							<textcolor>$VAR[color:Text.3]</textcolor>
-						</control>
-						<!-- Tags -->
-						<control type="label">
-							<width>25</width>
-							<height>45</height>
-							<label>&#57429;</label>
-							<font>Symbols-24</font>
-							<textcolor>$VAR[color:Text.3]</textcolor>
-							<visible>!String.IsEmpty(ListItem.Tag)</visible>
-						</control>
-						<control type="label">
-							<width>auto</width>
-							<height>45</height>
-							<label>$INFO[ListItem.Tag,&#32;,&#32;&#32;&#32;]</label>
-							<font>Regular-20</font>
-							<textcolor>$VAR[color:Text.3]</textcolor>
-							<visible>!String.IsEmpty(ListItem.Tag)</visible>
-						</control>
-					</control>
-					<!-- Plot -->
-					<control type="textbox">
-						<align>left</align>
-						<width>1188</width>
-						<height>215</height>
-						<label>$INFO[ListItem.Plot]</label>
-						<font>Slab-24</font>
-						<textcolor>$VAR[color:Accent]</textcolor>
-						<visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)</visible>
-					</control>
-					<control type="textbox">
-						<align>left</align>
-						<width>1188</width>
-						<height>295</height>
-						<label>$INFO[ListItem.Genre,, - ]$INFO[ListItem.Plot]</label>
-						<font>Slab-24</font>
-						<textcolor>$VAR[color:Accent]</textcolor>
-						<visible>!String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(ListItem.DBType,tvshow)</visible>
-					</control>
+				<!-- Plot -->
+				<control type="textbox">
+					<align>left</align>
+					<width>1188</width>
+					<height>295</height>
+					<label>$INFO[ListItem.Plot]</label>
+					<font>Slab-24</font>
+					<textcolor>$VAR[color:Accent]</textcolor>
+					<visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)</visible>
+				</control>
+				<control type="textbox">
+					<align>left</align>
+					<width>1188</width>
+					<height>295</height>
+					<label>$INFO[ListItem.Genre,, - ]$INFO[ListItem.Plot]</label>
+					<font>Slab-24</font>
+					<textcolor>$VAR[color:Accent]</textcolor>
+					<visible>!String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(ListItem.DBType,tvshow)</visible>
 				</control>
 			</control>
 
