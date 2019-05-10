@@ -26,7 +26,7 @@ This modification of Grid contains the original license file, and an unmodified 
 
 <a name="Compatibility"></a>
 ## Compatibility
-Currently Grid is compatible with Kodi 18 Leia.
+Currently this fork of Grid is only compatible with Kodi 18 Leia. 
 
 <a name="Support"></a>
 ## Support
