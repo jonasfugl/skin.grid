@@ -604,6 +604,45 @@
 		</definition>
 	</include>
 
+	<include name="horizontal_Scrollbar">
+		<definition>
+			<control type="scrollbar" id="6500">
+				<left>0</left>
+				<bottom>0</bottom>
+				<width>100%</width>
+				<height>8</height>
+				<texturesliderbackground />
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<orientation>horizontal</orientation>
+				<visible>Control.IsVisible(52)</visible>
+				<include>toggle_Menu</include>
+				<include>fadeinout</include>
+				<animation effect="slide" end="8" time="150" condition="!Control.IsVisible(52) + !Control.IsVisible(521) + String.IsEqual(Skin.String(global.scrolltype),passive) + !Control.HasFocus(6500)">Conditional</animation>
+				<animation effect="slide" end="0,8" time="150" condition="[Control.IsVisible(52) | Control.IsVisible(521)] + String.IsEqual(Skin.String(global.scrolltype),passive) + !Control.HasFocus(6500)">Conditional</animation>
+			</control>
+		</definition>
+	</include>
+
+	<include name="vertical_Scrollbar">
+		<definition>
+			<control type="scrollbar" id="6500">
+				<right>0</right>
+				<top>108</top>
+				<width>8</width>
+				<bottom>0</bottom>					
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<orientation>vertical</orientation>
+				<texturesliderbackground />
+				<visible>Control.IsVisible(50)</visible>
+				<include>fadeinout</include>
+				<include>toggle_Menu</include>
+			</control>
+		</definition>
+	</include>
+
+
 	<!--pagecontrol-->
 	<include name="global_Scrollbar">
 		<param name="Left" default="50"/>

@@ -186,25 +186,14 @@
 
 		</control>
 
-		<!--scrollbars-->
+		<!-- Vertical scrollbar -->
 		<control type="group">
-			<visible>!Control.IsVisible(52) + !Control.IsVisible(521) + !Control.IsVisible(53)</visible>
-			<include>global_Scrollbar</include>
+			<include>vertical_Scrollbar</include>
 		</control>
 
+		<!-- Horizontal scrollbar -->
 		<control type="group">
-			<visible>Control.IsVisible(52) |  Control.IsVisible(521) | Control.IsVisible(53)</visible>
-			<include content="global_Scrollbar">
-				<param name="Left">0</param>
-				<param name="Top">1072</param>
-				<param name="OnLeft">6500</param>
-				<param name="OnRight">6500</param>
-				<param name="OnUp">5500</param>
-				<param name="OnDown">noop</param>
-				<param name="Height">8</param>
-				<param name="Width">1920</param>
-				<param name="Orientation">horizontal</param>
-			</include>
+			<include>horizontal_Scrollbar</include>
 		</control>
 
 		<!--menu-->
