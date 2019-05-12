@@ -1316,7 +1316,7 @@
 		<value condition="Player.HasAudio">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album,  |  ]</value>
 		<value condition="Player.HasGame">$INFO[Player.FolderPath]</value>
 		<value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.NextTitle,$LOCALIZE[209]: ] ($INFO[VideoPlayer.Endtime])</value>
-		<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Genre]$INFO[VideoPlayer.Year,  |  ]$INFO[VideoPlayer.Director,  |  ]$INFO[VideoPlayer.FinishTime,  |  $LOCALIZE[31556]&#32;]</value>
+		<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Director,  |  ]$INFO[VideoPlayer.FinishTime,  |  $LOCALIZE[31556]&#32;]</value>
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TVShowTitle]  |  $INFO[VideoPlayer.Season,$LOCALIZE[20373] , - ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] ]  |  $INFO[VideoPlayer.Premiered]$INFO[VideoPlayer.FinishTime,  |  $LOCALIZE[31556]&#32;]</value>
 		<value condition="VideoPlayer.Content(files)">$INFO[VideoPlayer.VideoCodec,,  |  ]$VAR[player:VideoResolution]$VAR[player:Audio.Codec,  |  ]$VAR[player:Audio.Channels,  |  ]$INFO[VideoPlayer.FinishTime,  |  $LOCALIZE[31556]&#32;]</value>
 		<value condition="VideoPlayer.Content(musicvideos)">$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album,  |  ]$INFO[VideoPlayer.Year,  |  ]$VAR[player:VideoResolution,  |  ]</value>
