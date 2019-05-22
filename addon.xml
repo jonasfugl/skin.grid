@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="skin.grid" version="2.3.6" name="Grid" provider-name="Jeroen">
+<addon id="skin.grid" version="2.4.0" name="Grid.mod" provider-name="Jeroen, modded by Jonas">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="resource.uisounds.grid" version="0.0.1"/>
@@ -23,7 +23,7 @@
 			<screenshot>resources/screenshots/04.jpg</screenshot>
 			<screenshot>resources/screenshots/05.jpg</screenshot>
 		</assets>
-		<summary lang="en">Clear, bold, functional elegance.</summary>
+		<summary lang="en">Clear, bold, functional elegance. Now compatible with Leia.</summary>
 		<description lang="en_GB">The goal for Grid is to provide an elegant and intuitive way of enjoying all the wonderful features that Kodi provides. The design and development focuses on feature quality rather than quantity with a lot of attention spent on the little details that matter.</description>
 		<description lang="de_DE">Grid will einen eleganten und intuitiven Weg bereitstellen, all die wundervollen Kodi-Features zu nutzen. Design und Entwicklung richten sich nach Qualität, nicht nach Quantität.</description>
 		<description lang="es_ES">El objetivo de Grid es proveer una manera elegante e intuitiva de disfrutar todas las funcionalidades maravillosas que provee Kodi. El diseño y desarrollo se enfoca en la calidad de la funcionalidad, en vez de la cantidad, con mucha atención invertida en los pequeños detalles que hacen la diferencia.</description>
