@@ -14,7 +14,7 @@ excerpt:
 "NonCommercial — You may *not* use the material for commercial purposes."
 
 **To Kodi box sellers / streambox sellers, etc:**
-This means you are **not** allowed to sell products with Grid (pre)installed without my **prior written consent**!
+This means you are **not** allowed to sell products with Grid (pre)installed without the original author's **prior written consent**!
 
 This modification of Grid contains the original license file, and an unmodified copy of the original README.md file (README-original.md).
 
