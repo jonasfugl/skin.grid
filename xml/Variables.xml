@@ -160,9 +160,8 @@
 	</variable>
 
 	<variable name="count:Plays">
-		<value condition="Integer.IsEqual(ListItem.PlayCount,1)">$INFO[ListItem.PlayCount,, time] $INFO[ListItem.LastPlayed, ($LOCALIZE[568] ,) ]</value>
-		<value condition="Integer.IsGreater(ListItem.PlayCount,1)">$INFO[ListItem.PlayCount,, times] $INFO[ListItem.LastPlayed, ($LOCALIZE[568] ,) ]</value>
-		<value>$LOCALIZE[31077]</value>
+		<value condition="Integer.IsGreater(ListItem.PlayCount,0)">$INFO[ListItem.PlayCount] $INFO[ListItem.LastPlayed, ($LOCALIZE[568] ,) ]</value>
+		<value>$LOCALIZE[16101]</value>
 	</variable>
 
 	<variable name="count:Subtitles">
@@ -1225,9 +1224,9 @@
 		<value condition="Window.IsActive(pvrrecordinginfo)">$INFO[ListItem.Episode]</value>
 	</variable>
 	<variable name="information:R3.Label">
-		<value condition="Container.Content(movies)">$LOCALIZE[31076]</value>
-		<value condition="Container.Content(tvshows)">$LOCALIZE[31076]</value>
-		<value condition="Container.Content(episodes)">$LOCALIZE[31076]</value>
+		<value condition="Container.Content(movies)">$LOCALIZE[21441]</value>
+		<value condition="Container.Content(tvshows)">$LOCALIZE[21441]</value>
+		<value condition="Container.Content(episodes)">$LOCALIZE[21441]</value>
 		<value condition="Container.Content(musicvideos)">$LOCALIZE[31343]</value>
 		<value condition="Container.Content(albums)">$LOCALIZE[21895]</value>
 		<value condition="Container.Content(artists)">$LOCALIZE[21892]</value>
