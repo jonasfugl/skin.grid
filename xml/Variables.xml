@@ -1698,7 +1698,6 @@
 		<!-- Custom -->
 		<value condition="Window.IsActive(custom_1110-Addons.xml)">&#57389;</value>
 		<value condition="Window.IsActive(custom_1101-Manage.xml)">&#59028;</value>
-		<value condition="Window.IsActive(custom_1102-More.xml)">&#57413;</value>
 		<value condition="Window.IsActive(custom_1129-Hubs.xml)">&#59014;</value>
 		<!-- Info dialogs -->
 		<value condition="Window.IsActive(movieinformation) + Container.Content(movies)">&#57402;</value>
