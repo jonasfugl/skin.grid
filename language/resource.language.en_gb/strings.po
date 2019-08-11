@@ -242,6 +242,14 @@ msgctxt "#31075"
 msgid "Min"
 msgstr ""
 
+msgctxt "#31076"
+msgid "Playcount"
+msgstr ""
+
+msgctxt "#31077"
+msgid "Never played"
+msgstr ""
+
 msgctxt "#31078"
 msgid "Incompatible"
 msgstr ""
@@ -428,6 +436,10 @@ msgstr ""
 
 msgctxt "#31220"
 msgid "Viewtype"
+msgstr ""
+
+msgctxt "#31221"
+msgid "Gallery"
 msgstr ""
 
 #. Viewtype name. Translation might not be needed / suitable.
@@ -1035,6 +1047,16 @@ msgctxt "#31653"
 msgid "Airs today"
 msgstr ""
 
+#. Example usage: More by writer Stephen King
+msgctxt "#31654"
+msgid "More by writer"
+msgstr ""
+
+#. Example usage: More by director Steven Spielberg
+msgctxt "#31655"
+msgid "More by director"
+msgstr ""
+
 msgctxt "#31656"
 msgid "Youtube Search"
 msgstr ""
@@ -1049,6 +1071,11 @@ msgstr ""
 
 msgctxt "#31659"
 msgid "Similar shows"
+msgstr ""
+
+#. Example usage: More from 20th Century Fox
+msgctxt "#31660"
+msgid "More from"
 msgstr ""
 
 msgctxt "#31661"
@@ -1231,6 +1258,14 @@ msgstr ""
 #. example usage: currently the weather conditions are sunny
 msgctxt "#31851"
 msgid "Currently"
+msgstr ""
+
+msgctxt "#31852"
+msgid "YouTube: Popular"
+msgstr ""
+
+msgctxt "#31853"
+msgid "YouTube: Live"
 msgstr ""
 
 msgctxt "#31854"

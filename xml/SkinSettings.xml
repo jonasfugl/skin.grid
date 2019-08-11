@@ -332,11 +332,26 @@
 						<label>$LOCALIZE[31061]</label>
 						<include>global_Header</include>
 					</control>
+					<!-- YouTube search -->
+					<control type="radiobutton" id="341">
+						<label>$LOCALIZE[31656]</label>
+						<onclick>Skin.ToggleSetting(context.youtube)</onclick>
+						<selected>Skin.HasSetting(context.youtube)</selected>
+						<include>radio_Settings</include>
+					</control>
 					<!-- Trailer -->
 					<control type="radiobutton" id="342">
 						<label>$LOCALIZE[20410]</label>
 						<onclick>Skin.ToggleSetting(context.trailer)</onclick>
 						<selected>Skin.HasSetting(context.trailer)</selected>
+						<include>radio_Settings</include>
+					</control>
+
+					<!-- Trailer -->
+					<control type="radiobutton" id="343">
+						<label>test</label>
+						<onclick>Skin.ToggleSetting(foo)</onclick>
+						<selected>Skin.HasSetting(foo)</selected>
 						<include>radio_Settings</include>
 					</control>
 				</control>
