@@ -177,6 +177,8 @@
 					<control type="togglebutton" id="705">
 						<label>&#59054;</label>
 						<altlabel>&#59053;</altlabel>
+						<alttexturenofocus colordiffuse="$VAR[color:Main]">colorize/95.png</alttexturenofocus>
+						<alttexturefocus colordiffuse="$VAR[color:Accent]">colorize/75.png</alttexturefocus>
 						<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 						<include>osd_PlayerButton</include>
 						<onclick>PlayerControl(Play)</onclick>
