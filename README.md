@@ -25,4 +25,4 @@ Currently this fork of Grid is only compatible with Kodi 18 Leia.
 For any questions, discussion and support, please check the Grid section on the Kodi forums [here](https://forum.kodi.tv/forumdisplay.php?fid=280)
 
 ## Credits
-Credits to Jeroen for his original work on the Grid skin. Visit https://github.com/jeroenpardon/skin.grid/ or http://www.gridskin.net/ for more information.
+Credits to Jeroen for his original work on the Grid skin: https://github.com/jeroenpardon/skin.grid.
