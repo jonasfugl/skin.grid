@@ -1,3 +1,12 @@
+2.5
+- Improved Leia compatibility
+- Improved recognition of WEB-DL files when determining media source
+- Added watch-count to media information dialog
+- Removed unused views and "more" option from information dialog
+- Fixed duration being listed incorrectly in slide view
+- Added tagline to description in slide view
+- Changed some strings from skin-specific to native Kodi strings.
+
 2.0
 - First official Leia release
 - Updated default font to latest version (Cyrillic support)
