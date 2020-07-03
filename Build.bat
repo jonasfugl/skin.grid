@@ -3,8 +3,8 @@ SET BUILD_DIR=BUILD
 SET FOLDER_NAME=skin.grid
 
 ECHO ------------------------------
-echo Creating grid Build Folder
-rmdir %BUILD_DIR% /S /Q
+echo Creating Build Folder
+if exist %BUILD_DIR% rmdir %BUILD_DIR% /S /Q
 md %BUILD_DIR%
 
 ECHO ------------------------------
