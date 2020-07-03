@@ -6,6 +6,7 @@
 - Fixed duration being listed incorrectly in slide view
 - Added tagline to description in slide view
 - Changed some strings from skin-specific to native Kodi strings.
+- Fixed missing resume-indicator for items that were unwatched
 
 2.0
 - First official Leia release
