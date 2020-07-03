@@ -1,3 +1,5 @@
+2.5.1
+
 2.5
 - Improved Leia compatibility
 - Improved recognition of WEB-DL files when determining media source
