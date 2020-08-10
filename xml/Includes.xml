@@ -581,9 +581,9 @@
 				<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
 			</control>
 			<control type="label">
-				<width min="25" max="200">auto</width>
+				<width min="25" max="250">auto</width>
 				<height>$PARAM[Height]</height>
-				<label>$VAR[media:VideoResolution]$VAR[info:Source, &#8226; ]&#32;&#32;</label>
+				<label>$VAR[media:VideoResolution]$VAR[info:HDR, &#8226; ]$VAR[info:Source, &#8226; ]&#32;&#32;</label>
 				<textcolor>$VAR[color:Text.2]</textcolor>
 				<font>Regular-20</font>
 				<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
