@@ -532,7 +532,6 @@
 	</variable>
 
 	<variable name="info:Source">
-		<value condition="[String.Contains(ListItem.FileNameAndPath,HDR) + !String.Contains(ListItem.FileNameAndPath,HDRip)] + [String.Contains(ListItem.FileNameAndPath,2160p) | String.Contains(ListItem.FileNameAndPath,UHD) | String.Contains(ListItem.FileNameAndPath,UltraHD) | String.Contains(ListItem.FileNameAndPath,Ultra-HD) | String.Contains(ListItem.FileNameAndPath,4K)]">HDR</value>
 		<value condition="String.Contains(ListItem.FilenameAndPath,bluray) | String.Contains(ListItem.FilenameAndPath,blu-ray) | String.Contains(ListItem.FilenameAndPath,bdrip) | String.Contains(ListItem.FilenameAndPath,brrip) | String.Contains(ListItem.FilenameAndPath,bd25) | String.Contains(ListItem.FilenameAndPath,bd50)">BluRay</value>
 		<value condition="[String.Contains(ListItem.FilenameAndPath,.web.) | String.Contains(ListItem.FilenameAndPath,web.dl) | String.Contains(ListItem.FilenameAndPath,web-dl) | String.Contains(ListItem.FilenameAndPath,webdl) | String.Contains(ListItem.FilenameAndPath,web-download) | String.Contains(ListItem.FilenameAndPath,webrip)] + ![String.Contains(ListItem.VideoCodec,vp8) | String.Contains(ListItem.VideoCodec,vp9)]">WEB-DL</value>
 		<value condition="String.Contains(ListItem.FilenameAndPath,hdtv) | String.Contains(ListItem.FilenameAndPath,hdrip)">HDTV</value>
@@ -541,6 +540,10 @@
 		<value condition="String.Contains(ListItem.FilenameAndPath,.telesync) | String.Contains(ListItem.FilenameAndPath,.ts.)">TS</value>
 		<value condition="String.Contains(ListItem.FilenameAndPath,.cam)">CAM</value>
 		<value condition="[String.Contains(ListItem.FileExtension,img) | String.Contains(ListItem.FilenameAndPath,dvd) | String.Contains(ListItem.FileExtension,ifo) | String.Contains(ListItem.FileExtension,vob) | String.Contains(ListItem.FilenameAndPath,dvdrip) | String.Contains(ListItem.FilenameAndPath,dvdr5) | String.Contains(ListItem.FilenameAndPath,.r5) | String.Contains(ListItem.FilenameAndPath,dvdscreener) | String.Contains(ListItem.FilenameAndPath,dvdscr) | String.Contains(ListItem.FilenameAndPath,screener)] + ![String.Contains(ListItem.FilenameAndPath,hddvd) | String.Contains(ListItem.FilenameAndPath,hd-dvd)]">DVD</value>
+	</variable>
+
+	<variable name="info:HDR">
+		<value condition="[String.Contains(ListItem.FileNameAndPath,HDR) + !String.Contains(ListItem.FileNameAndPath,HDRip)]">HDR</value>
 	</variable>
 
 	<variable name="info:TitleFallback">
@@ -1139,9 +1142,9 @@
 		<value condition="Window.IsActive(pvrrecordinginfo)">$LOCALIZE[20373]</value>
 	</variable>
 	<variable name="information:L4">
-		<value condition="Container.Content(movies)">$INFO[ListItem.VideoCodec,,  |  ]$VAR[media:VideoResolution]$VAR[info:Source,  |  ]</value>
+		<value condition="Container.Content(movies)">$INFO[ListItem.VideoCodec,,  |  ]$VAR[media:VideoResolution]$VAR[info:HDR,  |  ]$VAR[info:Source,  |  ]</value>
 		<value condition="Container.Content(tvshows)">$VAR[info:NextEpisode]</value>
-		<value condition="Container.Content(episodes)">$INFO[ListItem.VideoCodec,,  |  ]$VAR[media:VideoResolution]$VAR[info:Source,  |  ]</value>
+		<value condition="Container.Content(episodes)">$INFO[ListItem.VideoCodec,,  |  ]$VAR[media:VideoResolution]$VAR[info:HDR,  |  ]$VAR[info:Source,  |  ]</value>
 		<value condition="Container.Content(musicvideos)">$INFO[ListItem.VideoCodec,,  |  ]$VAR[media:VideoResolution]$VAR[info:Source,  |  ]</value>
 		<value condition="Container.Content(albums)">$INFO[Window(Home).Property(SkinHelper.ListItem.Duration)]</value>
 		<value condition="Container.Content(artists)">$INFO[Window(Home).Property(SkinHelper.ListItem.AlbumCount)]</value>

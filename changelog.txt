@@ -1,4 +1,5 @@
 2.5.1
+- Improved listing of HDR and correct detection of file source
 
 2.5
 - Improved Leia compatibility
