@@ -26,11 +26,11 @@
 
 	<controls>
 
-		<!-- Preload weather -->
+		<!-- Preload weather 
 		<control type="label">
 			<font></font>
 			<label>$INFO[Weather.Conditions]</label>
-		</control>
+		</control>-->
 
 		<!-- Main menu layouts -->
 		<include condition="String.IsEqual(Skin.String(homemenu.layout),vertical) | String.IsEmpty(Skin.String(homemenu.layout))">home_Vertical</include>

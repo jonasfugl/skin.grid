@@ -1,5 +1,6 @@
 2.5.1
 - Improved listing of HDR in information dialog and list view, while still preserving correct media source
+- Added initial danish translation
 
 2.5
 - Improved Leia compatibility

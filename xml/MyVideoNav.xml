@@ -109,14 +109,6 @@
 					<param name="ViewTypeLabel" value="$LOCALIZE[31200]"/>
 				</include>
 			</control>
-			<control type="group">
-				<visible>Control.IsVisible(521)</visible>
-				<include>transition_ViewChange</include>
-				<include content="view_SlideThumb">
-					<param name="ViewTypeLabel">$LOCALIZE[31200]</param>
-					<param name="Art">$VAR[art:Landscape]</param>
-				</include>
-			</control>
 
 			<!-- Posters -->
 			<control type="group">
